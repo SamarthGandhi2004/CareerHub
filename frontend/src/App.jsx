@@ -17,6 +17,7 @@ import Applicants from "./components/adminComponents/Applicants";
 import Footer from "./shared/Footer";
 
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 

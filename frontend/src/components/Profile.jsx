@@ -26,32 +26,32 @@ const {user}=useSelector(store=>store.auth);
               <AvatarImage src={user?.profile?.profilePhoto} />
             </Avatar>
             <div>
-              <h1 className='font-medium text-xl text-green-700'>{user?.fullName}</h1>
-              <p className='text-green-700'>{user?.profile?.bio}</p>
+              <h1 className='font-medium text-xl text-purple-700'>{user?.fullName}</h1>
+              <p className='text-purple-700'>{user?.profile?.bio}</p>
             </div>
           </div>
           <Button className="text-right" variant="outline" onClick={()=>setOpen(true)}><Pen /></Button>
         </div>
         <div className='my-5'>
           <div className='flex items-center gap-3 my-2'>
-            <Mail className="text-green-700" />
-            <span className='text-green-700'>{user.email}</span>
+            <Mail className="text-purple-700" />
+            <span className='text-purple-700'>{user.email}</span>
           </div>
           <div className='flex items-center gap-3 my-2'>
-            <Contact className="text-green-700" />
-            <span className='text-green-700'>{user.phoneNumber}</span>
+            <Contact className="text-purple-700" />
+            <span className='text-purple-700'>{user.phoneNumber}</span>
           </div>
         </div>
         <div>
-          <h1 className='text-green-700'>Skills</h1>
+          <h1 className='text-purple-700'>Skills</h1>
           <div className='flex gap-2'>{
-          user?.profile?.skills.length !== 0 ? user?.profile?.skills.map((item, index) => <Badge key={index} className="cursor-pointer border-2 border-green-800 text-green-800 bg-transparent hover:bg-green-800 hover:text-white hover:border-white flex justify-center items-center h-8 w-20">{item}</Badge>) : <span>NA</span>
+          user?.profile?.skills.length !== 0 ? user?.profile?.skills.map((item, index) => <Badge key={index} className="cursor-pointer border-2 border-green-800 text-purple-700 bg-transparent hover:bg-purple-700 hover:text-white hover:border-white flex justify-center items-center h-8 w-20">{item}</Badge>) : <span>NA</span>
           }
           </div>
         </div>
 
         <div className='mt-4'>
-          <Label className='text-green-700'>Resume</Label>
+          <Label className='text-purple-700'>Resume</Label>
           {
             isResume ? <a target="blank" href={user?.profile?.resume} className='text-blue-600 w-full hover:underline cursor-pointer'>{user?.profile?.resumeOriginalName}</a> : <span>NA</span>
           }

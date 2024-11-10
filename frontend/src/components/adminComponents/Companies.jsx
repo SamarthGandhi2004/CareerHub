@@ -26,7 +26,7 @@ dispatch(setSearchCompanyByText(input))
                         placeholder="Filter by name"
                        onChange={(e)=>setInput(e.target.value)}
                     />
-                    <Button onClick={()=>navigate("/admin/companies/create")} className="bg-green-700 hover:bg-green-800" >New Company</Button>
+                    <Button onClick={()=>navigate("/admin/companies/create")} className="bg-purple-700 hover:bg-purple-700" >New Company</Button>
                 </div>
                 <CompaniesTable/>
             </div>

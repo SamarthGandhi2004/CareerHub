@@ -86,9 +86,9 @@ const CompanySetup = () => {
                             <ArrowLeft />
                             <span>Back</span>
                         </Button>
-                        <h1 className='font-bold text-xl text-green-700'>Company Setup</h1>
+                        <h1 className='font-bold text-xl text-purple-700'>Company Setup</h1>
                     </div>
-                    <div className='grid grid-cols-2 gap-4 text-green-700'>
+                    <div className='grid grid-cols-2 gap-4 text-purple-700'>
                         <div>
                             <Label>Company Name</Label>
                             <Input
@@ -135,7 +135,7 @@ const CompanySetup = () => {
                         </div>
                     </div>
                     {
-                        loading ? <Button className="w-full my-4 "> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4 bg-green-700 hover:bg-green-800">Update</Button>
+                        loading ? <Button className="w-full my-4 "> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4 bg-purple-700 hover:bg-purple-700">Update</Button>
                     }
                 </form>
             </div>

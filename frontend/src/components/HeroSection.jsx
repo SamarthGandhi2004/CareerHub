@@ -17,7 +17,7 @@ const HeroSection = () => {
   }
   return (
    <>
-    <div className="relative bg-green-700">
+    <div className="relative bg-purple-700">
       <div className="absolute inset-x-0 bottom-0">
         <svg
           viewBox="0 0 224 12"
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </span>
           </h2>
           <p className="mb-6 text-base text-indigo-100 md:text-sm">
-  Welcome to Job4U, your ultimate destination for finding the perfect job.
+  Welcome to CareerHub, your ultimate destination for finding the perfect job.
   Whether you are looking for a new career opportunity or aiming to hire top talent,
   our platform connects job seekers with employers across various industries.
   Explore thousands of job listings, access valuable career resources, and take the next step in your professional journey with us.
@@ -54,29 +54,14 @@ const HeroSection = () => {
     className='outline-none border-none w-full rounded-l-full h-12 px-4 '
   />
   <Button onClick={searchJobHandler} className="rounded-r-full bg-yellow-300 h-12 flex items-center justify-center px-4 w-20 hover:bg-yellow-400">
-    <Search className='h-5 w-5  text-green-700' />
+    <Search className='h-5 w-5  text-purple-700' />
   </Button>
 </form>
 
           <p className="max-w-md mb-10 text-xs tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque.
+          "Find your next opportunity. Search for jobs by title, company, or location to kickstart your career journey today!"
           </p>
-          <a
-            href="/"
-            aria-label="Scroll down"
-            className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="currentColor"
-            >
-              <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
-            </svg>
-          </a>
+       
         </div>
       </div>
     </div></>

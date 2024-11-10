@@ -11,7 +11,7 @@ const NewJobs = () => {
     return (
         <div className='max-w-7xl mx-auto my-20'>
             <h1 className='text-4xl font-bold'>
-                <span className='text-green-700'>New Openings &</span> Top-Rated Vacancies
+                <span className='text-purple-700'>New Openings &</span> Top-Rated Vacancies
             </h1>
             <div className='grid grid-cols-3 gap-4 my-5'>
                 {

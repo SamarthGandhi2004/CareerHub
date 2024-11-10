@@ -40,8 +40,8 @@ const Navbar = () => {
   return (
     <div className="bg-white p-4">
       <div className="max-w-7xl h-11 flex items-center justify-between mx-auto bg-white font-medium">
-        <div onClick={()=>navigate("/")}className="text-green-700 text-5xl  font-serif cursor-pointer">
-          Job <span className="text-yellow-300 text-7xl border-green-700 rounded bg-green-700 p-3">4</span>U
+        <div onClick={()=>navigate("/")}className="text-purple-700 text-5xl  font-serif cursor-pointer">
+        CareerHub                                               
         </div>
 
 
@@ -50,32 +50,33 @@ const Navbar = () => {
             {
               user && user.role === 'recruiter' ? (
                 <>
- <li className='text-green-800 text-1xl font-normal'><Link to={"/admin/companies"}>Companies</Link></li>
- <li className='text-green-800 text-1xl font-normal'><Link to={"/admin/jobs"}>Jobs</Link></li>
+ <li className='text-purple-700 text-1xl font-normal'><Link to={"/admin/companies"}>Companies</Link></li>
+ <li className='text-purple-700 text-1xl font-normal'><Link to={"/admin/jobs"}>Jobs</Link></li>
                 </>
 
               )
                 : (<>
-                  <li className='text-green-800 text-1xl font-normal'><Link to={"/"}>Home</Link></li>
-                  <li className='text-green-800 text-1xl font-normal'><Link to={"/jobs"}>Jobs</Link></li>
-                  <li className='text-green-800 text-1xl font-normal'><Link to={"/browse"}>Browse</Link></li>
+                  <li className='text-purple-700 text-1xl font-normal'><Link to={"/"}>Home</Link></li>
+                  <li className='text-purple-700 text-1xl font-normal'><Link to={"/jobs"}>Jobs</Link></li>
+                  <li className='text-purple-700 text-1xl font-normal'><Link to={"/browse"}>Browse</Link></li>
                 </>)}
           </ul>
 
           {
             !user ? (
               <>
+              
                 <div className='flex items-center'>
-                  <NavLink to="/Signup">
-                    <Button className="cursor-pointer border-2 border-green-800 text-green-800 bg-transparent hover:bg-green-800 hover:text-white hover:border-white">
-                      Signup
+                  <NavLink to="/Login">
+                    <Button className="cursor-pointer border-2 border-green-800 text-purple-700 bg-transparent hover:bg-purple-700 hover:text-white hover:border-white">
+                      Login
                     </Button>
                   </NavLink>
                 </div>
                 <div className='flex items-center'>
-                  <NavLink to="/Login">
-                    <Button className="cursor-pointer border-2 border-green-800 text-green-800 bg-transparent hover:bg-green-800 hover:text-white hover:border-white">
-                      Login
+                  <NavLink to="/Signup">
+                    <Button className="cursor-pointer border-2 border-green-800 text-purple-700 bg-transparent hover:bg-purple-700 hover:text-white hover:border-white">
+                      Signup
                     </Button>
                   </NavLink>
                 </div>

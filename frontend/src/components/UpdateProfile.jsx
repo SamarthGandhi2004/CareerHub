@@ -152,13 +152,13 @@ export const UpdateProfile = ({ open, setOpen }) => {
                     </div>
                     <DialogFooter>
                         {loading ? (
-                            <Button className="w-full bg-green-800 text-white">
+                            <Button className="w-full bg-purple-700 text-white">
                                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />Please wait
                             </Button>
                         ) : (
                             <Button
                                 type="submit"
-                                className="w-full bg-green-800 text-white hover:bg-green-700"
+                                className="w-full bg-purple-700 text-white hover:bg-purple-700"
                             >
                                 Update
                             </Button>

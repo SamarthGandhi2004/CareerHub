@@ -57,7 +57,7 @@ try {
                 />
                 <div className='flex items-center gap-2 my-10'>
                     <Button variant="outline" onClick={() => navigate("/admin/companies")}>Cancel</Button>
-                    <Button onClick={registryCompany} className="bg-green-700 hover:bg-green-800">Continue</Button>
+                    <Button onClick={registryCompany} className="bg-purple-700 hover:bg-purple-700">Continue</Button>
                 </div>
             </div>
         </div>
