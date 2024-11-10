@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://careerhub-owas.onrender.com',
     credentials: true
 }
 
